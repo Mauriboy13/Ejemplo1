@@ -4,43 +4,83 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prueba</title>
+    <title>API Google</title>
+    <style>
+		label {
+			font-family: 'Lucida Grande';
+			color: #000000;
+			font-size: 16px;
+		}
+		h1{
+			text-align: center;
+		}
+        #mapa {            
+            width: 100%;
+            height: 300px;
+        }
+        html, body {
+            height: 100%;
+            margin: 0;
+            background-color: rgb(152, 204, 247);
+            padding: 10;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 </head>
-<body>
-    <h1>Hola mundo</h1>
-    <h1>Mauricio Alb</h1>
-    <section>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto quidem maxime minus accusamus vel, voluptas totam at est. Architecto nulla dolorum omnis. Corrupti, quod modi eligendi libero sit dolores. Quaerat.
-        Labore esse voluptas quae repellat suscipit ad, beatae obcaecati quo laborum aperiam delectus, a quis sint sunt, error animi voluptatum fuga? Laudantium quos sunt eius excepturi debitis, placeat eos sequi?
-        Harum omnis libero possimus praesentium officia corporis soluta. Quis, accusamus ipsam eligendi praesentium ab fugiat officiis architecto ipsum perferendis consectetur veniam impedit eaque autem quia repudiandae molestiae provident, similique in.
-        Ullam itaque tempora tempore! Provident perspiciatis nesciunt ea nemo illo adipisci ducimus nihil explicabo labore! Tempora voluptatum alias perspiciatis odio cumque nesciunt veritatis excepturi totam amet iure, distinctio quam sapiente.
-        Rerum esse hic earum numquam fuga dicta ea consectetur, inventore quod quam, blanditiis, magni iure est. Vel ea, similique ipsa accusamus minus voluptatem consectetur doloribus possimus beatae suscipit nostrum cum?
-        Id molestias cupiditate qui aut ipsum ea laboriosam vitae. Sequi dolor ratione consequatur odio harum. Magnam ducimus modi expedita ipsam veritatis nam, exercitationem earum saepe maxime at, impedit accusamus fuga!
-        Commodi obcaecati enim architecto temporibus eaque rerum suscipit et laborum, facilis atque ut illo harum ipsum ad provident libero a natus placeat fugit voluptate animi nam quam dolorem soluta! Id?
-        Cumque, molestias eveniet eos voluptatum laborum dolore rem recusandae similique eaque, labore consequatur minima alias excepturi aspernatur veniam nulla repellendus dolorem vel quasi, possimus sint numquam itaque provident? Dolore, similique.
-        Repellat molestiae tenetur, deserunt accusantium error eligendi labore culpa quo corporis voluptas ea tempora eius nesciunt ducimus, inventore enim facere esse quis, vitae soluta quae? Tenetur quod recusandae hic magnam.
-        Vitae assumenda nesciunt nostrum delectus amet tenetur nihil distinctio esse, unde perspiciatis recusandae exercitationem iusto repellendus culpa, impedit placeat, fugiat voluptates! Nostrum soluta veritatis sapiente. Laudantium quas est eveniet minus.
-        Minima recusandae optio sit maiores labore? Obcaecati, provident! Expedita velit, sint minima quae odio rem iure adipisci ratione ut, ipsa tenetur, aspernatur provident! Obcaecati non tempore, voluptas laudantium deleniti numquam?
-        Ad rem dolor aliquid commodi error sed maxime corrupti magni dolore deserunt? Minus culpa totam dolor modi labore obcaecati laudantium, mollitia nisi sit quam, ipsa iusto distinctio, quidem dolorem animi.
-        Animi delectus rerum dicta recusandae non minima mollitia nemo fugiat repellat asperiores. Placeat dicta maiores quis magni facere architecto numquam nostrum unde, ipsa atque eveniet accusantium enim quos repudiandae repellat.
-        Blanditiis perspiciatis iure asperiores, necessitatibus dolorum adipisci tempora omnis quo dolores impedit, nihil dolorem animi beatae porro, inventore aut libero! Eos, aspernatur. Officiis itaque dolorum quod sed molestiae! Perferendis, minima.
-        Minus deserunt eligendi modi, aliquam illo eos ipsum corporis in fugiat iure veniam enim cupiditate nulla soluta incidunt fuga est quisquam, cumque omnis quaerat perferendis eveniet inventore? Inventore, placeat consequuntur.
-        Ducimus maxime quis debitis quod dicta, fugit eos rem magni, magnam, eius perferendis reprehenderit non nesciunt. Magni labore sint rem dolores illo cum voluptate, esse, ducimus minus, sunt eveniet maiores.
-        Vitae, alias. Reprehenderit, cum perferendis reiciendis vel cupiditate voluptas facilis placeat animi beatae aspernatur nulla iure nostrum facere numquam nemo id corporis ut obcaecati aperiam, fuga est esse, eveniet laudantium?
-        Sint accusantium quisquam, esse, illum error earum illo quo labore ipsum quam assumenda nemo? Similique, eius. Cum blanditiis omnis, a, eveniet unde quo possimus nisi dicta hic ullam, deleniti voluptas!
-        Molestias magnam, et voluptate asperiores aliquid laudantium sunt commodi. Doloribus incidunt harum, molestias veniam maiores nulla obcaecati aliquam, voluptatem eligendi cumque sint! Officia inventore modi facere itaque dolor, blanditiis quod.
-        Illum ipsam eos placeat, in temporibus laudantium soluta ab ipsum harum, animi totam! Totam atque odit, necessitatibus est placeat optio mollitia incidunt? Animi unde quidem culpa dolor minus distinctio consectetur?
-        Consectetur, incidunt velit perspiciatis sint magni voluptatem cum qui, ad nihil eum tenetur commodi, debitis blanditiis illum? Rerum voluptatem nesciunt dolores, porro laboriosam ipsa, nulla amet incidunt dolor repudiandae corrupti.
-        Cumque inventore repellat vero harum itaque. Neque fuga minus autem repellat fugit eos quibusdam eius beatae. Rem, velit laudantium error quis dignissimos, dolorem nobis dolor possimus assumenda, provident recusandae voluptatum.
-        Eius expedita inventore blanditiis magnam vitae magni laborum deleniti iure. Suscipit earum quae nulla deserunt, reiciendis adipisci eius eligendi debitis perferendis, autem, incidunt libero molestias nobis blanditiis culpa asperiores ipsa?
-        Quis accusamus soluta voluptatum molestias eaque ratione explicabo? Voluptates, cumque! Nostrum voluptates maiores error placeat labore. Sunt vero rerum, porro eveniet quaerat minima sequi vel. Explicabo reprehenderit quasi voluptas doloremque.
-        Officiis ducimus mollitia porro molestias id quo reiciendis quos dolorem blanditiis soluta deleniti odio ex dolore voluptatem aperiam voluptatum necessitatibus maxime sit corrupti, cum eos! Nobis voluptatibus rerum ipsam deserunt!
-        Amet, est? Optio veniam sint, distinctio odit blanditiis consequuntur fugit harum ducimus quis necessitatibus corrupti hic consectetur reiciendis, delectus laudantium mollitia, aliquid voluptatibus doloremque. Eius officia aliquid quas voluptates omnis.
-        Voluptates, id quia. Harum voluptas repudiandae quod nobis amet. Molestias deleniti dolores aperiam porro eaque numquam id voluptatibus illum aspernatur incidunt asperiores facilis placeat totam, consequuntur laborum unde at? Assumenda?
-        Quae quos excepturi error, nam consequatur fugiat similique tempora deleniti, at repellat nisi quia quo, veniam dignissimos veritatis doloribus voluptatem. Aut quia temporibus odio quo itaque ab qui fugit unde?
-        Sed laboriosam voluptatum est impedit, maxime, maiores id repellendus animi enim exercitationem nostrum? Obcaecati, adipisci rerum repellendus asperiores rem ipsam quod. Quod obcaecati perferendis odit ex sit porro quam exercitationem!
-        Aspernatur reprehenderit quae esse odio. Tempora, ratione necessitatibus ducimus dignissimos laboriosam voluptatem culpa nemo? Optio vel porro cum repellendus nobis asperiores blanditiis nisi, eligendi unde nostrum inventore, molestiae quasi non!</p>
-    </section>
-    <img src="img/Futura.jpg" alt="Fondo" width="500">
+<body onload="iniciarMapa()">
+    <h1>API Google</h1>
+
+    <fieldset>
+        <h2>Ingresa:</h2>
+        <div>
+            <label for="latitud" align="center">Latitud:</label>
+            <input type="text" id="latitud" align="center" autofocus>
+        </div><br><br>
+
+        <div>
+            <label for="altitud" align="center">Altitud:</label>
+            <input type="text" id="altitud" align="center">
+        </div><br><br>
+    </fieldset><br>
+
+    <div id="mapa" align="center"></div>
+
+   
+<script>
+    $(document).ready(function(){
+        var urlParams = new URLSearchParams(window.location.search);
+        var latitud = urlParams.get('latitud') || 19.8011219;
+        var altitud = urlParams.get('altitud') || -99.090288;
+
+        coordenadas = {
+            lng: altitud,
+            lat: latitud
+        }
+        generarMapa(coordenadas);
+
+        $("#latitud").val(latitud);
+        $("#altitud").val(altitud);
+    });
+
+    function generarMapa(coordenadas){
+        var mapa = new google.maps.Map(document.getElementById('mapa'),{
+            zoom: 15,
+            center: new google.maps.LatLng(coordenadas.lat, coordenadas.lng)
+        });
+
+        marcador = new google.maps.Marker({
+            map:mapa,
+            draggable: true,
+            position: new google.maps.LatLng(coordenadas.lat, coordenadas.lng)
+        });
+
+        marcador.addListener('dragend', function(event){
+            $("#latitud").val(this.getPosition().lat());
+            $("#altitud").val(this.getPosition().lng());
+        });
+    }
+</script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=&callback=iniciarMapa"></script>
 </body>
 </html>
