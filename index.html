@@ -31,7 +31,6 @@
     <h1>API Google</h1>
 
     <fieldset>
-	    <div id="gps-data"></div>
 
         <h2>Coordenadas:</h2>
         <div>
@@ -82,24 +81,7 @@
         });
     }
 </script>
-<script>
-function updateGPSData() {
-  // Crear un objeto XMLHttpRequest
-  var xhttp = new XMLHttpRequest();
-  // Definir la función callback que se ejecutará cuando se reciba la respuesta
-  xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-      // Actualizar el contenido del <div> con los nuevos datos recibidos
-      document.getElementById("gps-data").innerHTML = this.responseText;
-    }
-  };
-  // Hacer una solicitud HTTP GET al servidor
-  xhttp.open("GET", "/gps-data", true);
-  xhttp.send();
-}
-// Llamar a la función updateGPSData cada 5 segundos
-setInterval(updateGPSData, 5000);
-</script>
+
 
     <script src="https://maps.googleapis.com/maps/api/js?key=&callback=iniciarMapa"></script>
 </body>
