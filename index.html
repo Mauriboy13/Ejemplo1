@@ -80,6 +80,17 @@
             $("#altitud").val(this.getPosition().lng());
         });
     }
+	function updateCoordinates() {
+  var xhr = new XMLHttpRequest();
+  xhr.open("GET", "/get-coordinates", true);
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
+      // ... procesa las coordenadas recibidas del servidor ...
+      // ... actualiza el contenido de la página con las nuevas coordenadas ...
+    }
+  }
+  xhr.send();
+}
 </script>
 
 
